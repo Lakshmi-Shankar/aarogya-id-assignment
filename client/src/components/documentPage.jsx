@@ -15,7 +15,7 @@ const DocumentPage = () => {
     // To retrive all the files
     const allDocuments = async() => {
 
-        const response = await fetch("http://localhost:5000/api/getFile", {
+        const response = await fetch("https://aarogya-id-backend.onrender.com/api/getDocument", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -28,7 +28,7 @@ const DocumentPage = () => {
 
     // To upload files
     const upload = async (fileName) => {
-        const response = await fetch("http://localhost:5000/api/fileUpload", {
+        const response = await fetch("https://aarogya-id-backend.onrender.com/api/fileUpload", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -57,7 +57,7 @@ const DocumentPage = () => {
 
     // To find the document by ID for VIEW DOCUMENT button
     const findbyid = async(idFetch) => {
-        const response = await fetch("http://localhost:5000/api/getFileId", {
+        const response = await fetch("https://aarogya-id-backend.onrender.com/api/getFileId", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
