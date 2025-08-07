@@ -21,11 +21,17 @@ Located in the `backend/` directory.
 Located in the `client/` directory.
 
 - Users can upload a document file and preview stored documents.
-- Responsive UI mimicking reference designs (e.g., SwasthX).
+- UI mimicking reference designs (e.g., SwasthX).
 - Smooth animations and transitions using Framer Motion.
 - Displays extracted key-value pairs once Document AI is integrated.
 
 ---
+
+## API Endpoints
+
+ - /api/getDocument
+ - /api/getFileId
+ - /api/fileUpload
 
 ## Features
 
