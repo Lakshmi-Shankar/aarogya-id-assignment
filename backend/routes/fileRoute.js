@@ -3,7 +3,7 @@ const router = express.Router();
 
 const fileSchema = require("../schema/fileSchema");
 
-router.get("/getFile", async(req, res) => {
+router.get("/getDocument", async(req, res) => {
     try{
         const allFileData = await fileSchema.find();
         if( allFileData.length === 0 ){
