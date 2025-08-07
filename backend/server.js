@@ -5,10 +5,11 @@ const cors = require("cors");
 require("dotenv").config();
 
 const fileRoute = require("./routes/fileRoute");
+const links = ["https://aarogya-id-client.onrender.com", "http://localhost:5173" ]
 
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: links,
 }));
 app.use("/api", fileRoute);
 
