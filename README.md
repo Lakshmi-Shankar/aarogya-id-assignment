@@ -29,9 +29,9 @@ Located in the `client/` directory.
 
 ## API Endpoints
 
- - /api/getDocument
- - /api/getFileId
- - /api/fileUpload
+ - `/api/getDocument`
+ - `/api/getFileId`
+ - `/api/fileUpload`
 
 ## Features
 
